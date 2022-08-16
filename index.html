@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Male_Fashion Template">
+    <meta name="keywords" content="Male_Fashion, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TRƯỜNG ĐẠI HỌC MỞ</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="./style/style.css" >
+    <link rel="stylesheet" href="./style/styles.css">
+    <link rel="stylesheet" href="./style/fontawesome-free-5.15.4-web/css/all.css">
+    
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <!-- <div id="preloder">
+        <div class="loader"></div>
+    </div> -->
+
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas__option">
+            <div class="offcanvas__links">
+                <!-- <a href="#">Sign in</a>
+                <a href="#">FAQs</a> -->
+            </div>
+             
+            
+           
+        </div>
+        <div class="offcanvas__nav__option">
+            <a href="#" class="search-switch"><img src="{{asset('public/frontend/img/icon/search.png')}}" alt=""></a>
+            <a href="{{URL::to('/wistlist')}}"><img src="{{asset('public/frontend/img/icon/heart.png')}}" alt=""></a>
+            <a href="{{URL::to('/cart')}}">
+                <img src="{{asset('public/frontend/img/icon/cart.png')}}" alt="">
+                <div class="count-cart-products"></div>
+            </a>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+        <div class="offcanvas__text">
+            <p>Miễn phí vận chuyển với đơn hàng trên 15.000.000₫.</p>
+        </div>
+    </div>
+    <!-- Offcanvas Menu End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-8">
+                        <div class="header__top__left">
+                            <img class="header__top__left__img" src="image/logo-w1.png" alt="">
+                            <span class="header__top__left__text">
+                                Cổng thông tin tuyển sinh
+                                <br>
+                                Trường Đại học Mở Thành phố Hồ Chí Minh
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <div class="header__top__right">
+                            <div class="header__top__links">
+                                <div class="input_container">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                    <input type="text" id="keywords" id="search-input" name="keywords_submit" placeholder="Tìm kiếm" class="input">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bodyContainer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                        <nav class="header__menu mobile-menu">
+                            <ul>
+                                <li class="nav-item"><a href="#">Trang chủ</a>
+                                </li>
+
+                                <li class="nav-item"><a href="#">Thông tin tuyển sinh <i class="fas fa-angle-down"></i></a>
+                                    <ul class="dropdown">
+                                        <li><a
+                                                href="#">d</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item"><a href="#">Thông tin khoa-ngành</a>
+                                </li>
+                                <li class="nav-item"><a href="#">Thông tin tham khỏa <i class="fas fa-angle-down"></i></a>
+                                    <ul class="dropdown">
+                                        <li><a
+                                                href="#">d</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item"><a href="#">Liên hệ</a>
+                                </li>
+
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="canvas__open"><i class="fa fa-bars"></i></div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Hero Section Begin -->
+    <!-- <div class="bodyContainer">
+        <section id="a" class="hero">
+            <div class="hero__slider owl-carousel">
+            
+                <div class="hero__items set-bg active" data-setbg="https://ou.edu.vn/wp-content/uploads/2022/04/Banner-web-Tien-si_1900x500.jpg">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-5 col-lg-7 col-md-8">
+                                <div class="hero__text">
+                                    <p>{!! $slide->slider_desc !!}</p>
+                                    <a href="{{URL::to('/store')}}" class="primary-btn">Shop now <span class="arrow_right"></span></a>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           
+            </div>
+        </section> -->
+        <div class="container">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                <img class="image-slide" src="https://tuyensinh.ou.edu.vn/tmp/rscache/1110x475-KQ%20so%20tuyen-01.png" >
+                
+                </div>
+                
+                <div class="mySlides fade">
+                <img  class="image-slide" src="https://tuyensinh.ou.edu.vn/tmp/rscache/1110x475-Ng%C3%A0nh%20TS%202022.jpg" >
+                </div>
+                
+                <div class="mySlides fade">
+                <img  class="image-slide" src="https://tuyensinh.ou.edu.vn/tmp/rscache/1110x475-Dai%20tra2022-01.png" >
+                </div>
+
+                <div class="mySlides fade">
+                <img  class="image-slide" src="https://tuyensinh.ou.edu.vn/tmp/rscache/1110x475-Capture1.PNG" >
+                </div>
+
+                <div class="mySlides fade">
+                <img  class="image-slide" src="https://tuyensinh.ou.edu.vn/tmp/rscache/1110x475-unnamed%20(2).png" >
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+              <span class="dot" onclick="currentSlide(4)"></span> 
+              <span class="dot" onclick="currentSlide(5)"></span> 
+            </div>
+        </div>
+
+
+
+
+
+
+
+            
+
+    <div class="homeResources">
+        <div class="container">
+            
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="homeResources__left">
+                        <div class="homeResources__title">
+                            <h2>THÔNG TIN TUYỂN SINH ĐẠI HỌC CHÍNH QUY</h2>
+                        </div>
+                        <div class="homeResources__body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="homeResources__body_content">
+                                        <img class="img-fluid" src="https://tuyensinh.ou.edu.vn/tmp/rscache/540x305-2907-01.png" alt="">
+                                        <div class="homeResources__body_noti">
+                                            <div class="homeResources__body_noti_time">
+                                                <i class="fas fa-clock"></i> 02/08/2022 09:33
+                                            </div>
+                                            <a href="#">
+                                                <img class="img_noti" src="https://tuyensinh.ou.edu.vn/theme/ts2020/assets/images/icon-new.gif" alt="">
+                                                Thông báo v/v Ngưỡng điểm nhận hồ sơ đăng ký xét tuyển kết quả thi tốt nghiệp THPT năm 2022
+                                            </a>
+                                        </div>
+                                        <div class="homeResources__right_content">
+                                            <a href="#">
+                                                 <div class="row">
+                                                     <div class="col-lg-4">
+                                                         <img class="homeResources_img" src="https://tuyensinh.ou.edu.vn/tmp/rscache/112x70-Dang%20ky%20nguyen%20vong.png" alt="">
+                                                     </div>
+                                                     <div class="col-lg-8">
+                                                         <div class="homeResources__text">
+                                                            <img class="img_noti" src="https://tuyensinh.ou.edu.vn/theme/ts2020/assets/images/icon-new.gif" alt="">
+                                                            Thông báo về việc đăng ký xét tuyển đại học chính quy năm 2022 - Phương thức...
+                                                         </div>
+                                                         <i class="fas fa-angle-double-right facss"></i>
+                                                     </div>
+                                                 </div>
+                                             </a>
+                                         </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="homeResources__right_content_f">
+                                               <a href="#">
+                                                    <div class="row">
+                                                        <div class="col-lg-4">
+                                                            <img class="homeResources_img" src="https://tuyensinh.ou.edu.vn/tmp/rscache/112x70-Tra%20cuu%20diem%20thi.jpg" alt="">
+                                                        </div>
+                                                        <div class="col-lg-8">
+                                                            <div class="homeResources__text">
+                                                                <img class="img_noti" src="https://tuyensinh.ou.edu.vn/theme/ts2020/assets/images/icon-new.gif" alt="">
+                                                                Thông báo kết quả đợt xét tuyển học bạ Đại học Chính quy 2022
+                                                            </div>
+                                                            <i class="fas fa-angle-double-right facss"></i>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="homeResources__right_content">
+                                                <a href="#">
+                                                    <div class="row">
+                                                        <div class="col-lg-4">
+                                                            <img class="homeResources_img" src="https://tuyensinh.ou.edu.vn/tmp/rscache/112x70-D%E1%BB%B1%20ki%E1%BA%BFn%20c%C3%B4ng%20b%E1%BB%91%20k%E1%BA%BFt%20qu%E1%BA%A3%20s%C6%A1%20tuy%E1%BB%83n.png" alt="">
+                                                        </div>
+                                                        <div class="col-lg-8">
+                                                            <div class="homeResources__text">
+                                                                Thông báo v/v Công bố kết quả phương thức tuyển sinh riêng (Học bạ) 2022
+                                                            </div>
+                                                            
+                                                            <i class="fas fa-angle-double-right facss"></i>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="homeResources__right_content">
+                                                <a href="#">
+                                                    <div class="row">
+                                                        <div class="col-lg-4">
+                                                            <img class="homeResources_img" src="https://tuyensinh.ou.edu.vn/tmp/rscache/112x70-TS2022_v1-01.jpg" alt="">
+                                                        </div>
+                                                        <div class="col-lg-8">
+                                                            <div class="homeResources__text">
+                                                                Tổng hợp thông tin Tuyển sinh ĐHCQ năm 2022
+                                                            </div>
+                                                             
+                                                             <i class="fas fa-angle-double-right facss"></i>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="homeResources__right_content">
+                                                <a href="#">
+                                                    <div class="row">
+                                                        <div class="col-lg-4">
+                                                            <img class="homeResources_img" src="https://tuyensinh.ou.edu.vn/tmp/rscache/112x70-Untitled-2-01.png" alt="">
+                                                        </div>
+                                                        <div class="col-lg-8">
+                                                            <div class="homeResources__text">
+                                                                Đề án tuyển sinh đại học năm 2022
+                                                            </div>
+                                                            
+                                                            <i class="fas fa-angle-double-right facss"></i>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="homeResources__title">
+                            <h2>THÔNG TIN TUYỂN SINH ĐH BẰNG THỨ 2 VÀ LIÊN THÔNG CĐ-ĐH</h2>
+                        </div>
+                        <div class="homeResources__body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="homeResources__body_content">
+                                        <img class="img-fluid" src="https://tuyensinh.ou.edu.vn/tmp/rscache/540x305-Untitled-2-01.png" alt="">
+                                        <div class="homeResources__body_noti">
+                                            <div class="homeResources__body_noti_time">
+                                                <i class="fas fa-clock"></i> 02/08/2022 09:33
+                                            </div>
+                                            <a href="#">
+                                                <img class="img_noti" src="https://tuyensinh.ou.edu.vn/theme/ts2020/assets/images/icon-new.gif" alt="">
+                                                Thông báo tuyển sinh trình độ đào tạo đại học với đối tượng tốt nghiệp đại học (Đại học bằng thứ 2) - hình thức đào tạo chính quy năm 2022
+                                            </a>
+                                        </div>
+                                        <div class="homeResources__right_content">
+                                            <a href="#">
+                                                 <div class="row">
+                                                     <div class="col-lg-4">
+                                                         <img class="homeResources_img" src="https://tuyensinh.ou.edu.vn/tmp/rscache/112x70-thontgtintuyensinh.jpg" alt="">
+                                                     </div>
+                                                     <div class="col-lg-8">
+                                                         <div class="homeResources__text">
+                                                            <img class="img_noti" src="https://tuyensinh.ou.edu.vn/theme/ts2020/assets/images/icon-new.gif" alt="">
+                                                            Thông báo tuyển sinh đào tạo trình độ đại học với đối tượng tốt nghiệp cao đẳng...
+                                                         </div>
+                                                         <i class="fas fa-angle-double-right facss"></i>
+                                                     </div>
+                                                 </div>
+                                             </a>
+                                         </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="homeResources__right_content_f">
+                                               <a href="#">
+                                                    <div class="row">
+                                                        <div class="col-lg-4">
+                                                            <img class="homeResources_img" src="https://tuyensinh.ou.edu.vn/tmp/rscache/112x70-Vb2-LT0110-01.jpg" alt="">
+                                                        </div>
+                                                        <div class="col-lg-8">
+                                                            <div class="homeResources__text">
+                                                                <img class="img_noti" src="https://tuyensinh.ou.edu.vn/theme/ts2020/assets/images/icon-new.gif" alt="">
+                                                                Thông tin các loại tài khoản Văn bằng 2, Liên thông CĐ-ĐH, Khóa 2021
+                                                            </div>
+                                                            <i class="fas fa-angle-double-right facss"></i>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="homeResources__right_content">
+                                                <a href="#">
+                                                    <div class="row">
+                                                        <div class="col-lg-4">
+                                                            <img class="homeResources_img" src="https://tuyensinh.ou.edu.vn/tmp/rscache/112x70-Nhap%20hoc%20VB2-LT-01.jpg" alt="">
+                                                        </div>
+                                                        <div class="col-lg-8">
+                                                            <div class="homeResources__text">
+                                                                Thủ tục nhập học Tân sinh viên Văn bằng 2 - Liên thông Khóa 2021
+                                                            </div>
+                                                            
+                                                            <i class="fas fa-angle-double-right facss"></i>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="homeResources__right_content">
+                                                <a href="#">
+                                                    <div class="row">
+                                                        <div class="col-lg-4">
+                                                            <img class="https://tuyensinh.ou.edu.vn/tmp/rscache/112x70-Li%C3%AAn%20th%C3%B4ng%20-%20B2-01.jpg" alt="">
+                                                        </div>
+                                                        <div class="col-lg-8">
+                                                            <div class="homeResources__text">
+                                                                Kết quả tuyển sinh ĐH Văn bằng 2, Liên thông CĐ-ĐH năm 2021
+                                                            </div>
+                                                             
+                                                             <i class="fas fa-angle-double-right facss"></i>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="homeResources__right_content">
+                                                <a href="#">
+                                                    <div class="row">
+                                                        <div class="col-lg-4">
+                                                            <img class="homeResources_img" src="https://tuyensinh.ou.edu.vn/tmp/rscache/112x70-Gia%20han_v2.jpg" alt="">
+                                                        </div>
+                                                        <div class="col-lg-8">
+                                                            <div class="homeResources__text">
+                                                                Thông báo vv nhận Đợt 2 Hồ sơ đăng ký xét tuyển Đại học bằng thứ 2,...
+                                                            </div>
+                                                            
+                                                            <i class="fas fa-angle-double-right facss"></i>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col-lg-4">
+                    <div class="homeResources__right">
+                        <div class="homeResources__right__title">
+                            <h2>TIN MỚI</h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="homeResources__right_content">
+                                   <a href="#"> Đề án tuyển sinh đại học năm 2022</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="homeResources__right_content">
+                                    <a href="#">Thông báo tuyển sinh chương trình liên kết Đại học Rouen Normandie, Pháp - Khóa 5, Năm 2022
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="homeResources__right_content">
+                                    <a href="#">Thông báo tuyển sinh chương trình liên kết đào tạo với Đại học Bond - Khóa 2
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="homeResources__right_content">
+                                    <a href="#">Thông báo tuyển sinh chương trình liên kết đào tạo với Đại học Flinders - Khóa 5
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="list_group">
+                        <div class="list_group_item">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="https://tuyensinh.ou.edu.vn/tmp/rscache/86x73-thungo.png" alt="">
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="list_group_item_text">
+                                        Thư ngỏ 
+                                        <br>
+                                        hiệu trưởng
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list_group_item">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="https://tuyensinh.ou.edu.vn/tmp/rscache/86x73-lydochonou.png" alt="">
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="list_group_item_text">
+                                        vì sao 
+                                        <br>
+                                        chọn ou
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list_group_item">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="https://tuyensinh.ou.edu.vn/tmp/rscache/86x73-tongquan.png" alt="">
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="list_group_item_text">
+                                        tổng quan 
+                                        <br>
+                                        về ou
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list_group_item">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="https://tuyensinh.ou.edu.vn/tmp/rscache/86x73-faqs.png" alt="">
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="list_group_item_text">
+                                        câu hỏi
+                                        <br>
+                                        thường gặp
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="linkweb">
+        <div class="container">
+            <div class="linkweb__title">
+                <h2>LIÊN KẾT WEBSITE</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="linkweb__body">
+                        <img src="https://ou.edu.vn/wp-content/uploads/2016/04/logo_moet-e1597916250622.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="linkweb__body">
+                        <img src="https://ou.edu.vn/wp-content/uploads/2016/04/banner_eict.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="question_form">
+        <div class="container">
+            <form action="" method="POST" id="form">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-6 centered">
+                        <div class="linkweb__title">
+                            <h2>CÂU HỎI TUYỂN SINH</h2>
+                        </div>
+                        <div class="question__input">
+                            <p>Họ và tên</p>
+                            <input type="text" name="name" placeholder="Điền họ và tên" value="">
+                        </div>
+                        <div class="question__input">
+                            <p>Email</p>
+                            <input type="email" name="email" placeholder="Điền Email" value="">
+                        </div>
+                        <div class="question__input">
+                            <p>Số điện thoại</p>
+                            <input type="text" name="phone" placeholder="Điền số điện thoại" value="">
+                        </div>
+                        <div class="question__input">
+                            <p>Câu hỏi</p>
+                            <textarea name="notes" class="question__input_notes"
+                                placeholder="Câu hỏi của bạn" rows="6" cols="68"
+                                style="resize: none;"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Hệ đào tạo</label>
+                            <select name="wards" id="wards" class="form-control input-sm m-bot15 wards">
+                                <option value="">Đại học chính quy(Hệ đại trà)</option>
+                                <option value="">Đại học chính quy(Chất lượng cao)</option>
+                                <option value="">Bằng 2- liên thông</option>
+                            </select>
+                        </div>
+                        
+                        <div class="question__input">
+                            <button type="submit" value="submit" class="site-btn "><i class="fas fa-user-plus"></i> Đăng ký nhận thông tin</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section Begin -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="row">
+                    <div class="col-5 col-lg-5">
+                        <div class="footer__img">
+                            <img src="./image/Logo.png" class="img_logo_footer">
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-6 d-none d-lg-block footer__img"></div> -->
+                    <div class="col-7 col-lg-7 ">
+                        <div class="footer__copyright__text">
+                            <p>
+                                Trường Đại học Mở thành phố Hồ Chí Minh đóng góp và nâng cao tri thức cho cộng đồng bằng các phương thức linh hoạt và thuận tiện nhất.
+                            </p>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+            <div class="footer__mid"></div>
+
+            <div class="row">
+                <div class="col-lg-5 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h4>THÔNG TIN CHUNG</h4>
+                        <div class="line"></div>
+                        <ul>
+                            <li>
+                                <a href="#">Địa chỉ: 35 – 37 Hồ Hảo Hớn, Phường Cô Giang, Quận 1, TP. HCM.</a>
+                            </li>
+                            <li>
+                                <a href="#">Điện thoại:<span> 028-38364748.</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Fax:<span> 028-39207639 hoặc 028-39207640.</span></a>
+                            </li>
+                            <li>
+                                <a href="#">E-mail:<span> ou@ou.edu.vn.</span></a>
+                            </li>
+                        </ul>
+                        <h5>Kết nối với chúng tôi</h5>
+                        <div class="contacticon">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-3 col-sm-6">
+                    <div class="footer__widget2">
+                        <h4>CÁC CƠ SỞ TRỰC THUỘC</h4>
+                        <div class="line"></div>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-map-marker-alt">
+                                        <span class="location">Địa điểm 1:</span>
+                                    </i>
+                                        97 Võ Văn Tần, P. Võ Thị Sáu, Q. 3, TP. Hồ Chí Minh.
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-map-marker-alt">
+                                        <span class="location">Địa điểm 2:</span>
+                                    </i>
+                                        35-37 Hồ Hảo Hớn, P. Cô Giang, Q. 1 , TP. Hồ Chí Minh.
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-map-marker-alt">
+                                        <span class="location">Địa điểm 3:</span>
+                                    </i>
+                                        371 Nguyễn Kiệm, P. 3, Q. Gò Vấp, TP. Hồ Chí Minh.
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-map-marker-alt">
+                                        <span class="location">Địa điểm 4:</span>
+                                    </i>
+                                        02 Mai Thị Lựu, P. Đa Kao, Q. 1, TP. Hồ Chí Minh.
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-map-marker-alt">
+                                        <span class="location">Địa điểm 5:</span>
+                                    </i>
+                                        68 Lê Thị Trung, P. Phú Lợi, TP. Thủ Dầu Một,
+                                        <br>
+                                        Tỉnh Bình Dương.
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-map-marker-alt">
+                                        <span class="location">Địa điểm 6:</span>
+                                    </i>
+                                        Đường số 9, P. Long Bình Tân,
+                                        <br>
+                                        TP. Biên Hòa, Tỉnh Đồng Nai.
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-map-marker-alt">
+                                        <span class="location">Địa điểm 7:</span>
+                                    </i>
+                                        Số 04 đường Tân Định, P. Ninh Hiệp, Thị Xã Ninh Hòa,
+                                        <br>
+                                        Tỉnh Khánh Hòa.
+                                        <br>
+                                        ĐT: 02583630333 - 02583634540
+                                        
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer__buttom">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-12">
+                        © 2022 TRƯỜNG ĐẠI HỌC MỞ TP HCM.
+                </div>
+            </div>   
+        </div>
+    </div>
+    <!-- Footer Section End -->
+
+    <!-- Search Begin -->
+    <div class="search-model">
+        <div class="d-flex align-items-center justify-content-center">
+            <div class="overlay"></div>
+            <form action="{{URL::to('/search')}}" method="POST" autocomplete="off" class="search-model-form">
+               
+                <div class="input_container">
+                    <img src="{{asset('public/frontend/img/icon/search-icon.svg')}}" class="input_img">
+                    <input type="text" id="keywords" id="search-input" name="keywords_submit" placeholder="Tìm kiếm sản phẩm" class="input">
+                    <div class="search-close-switch">+</div>
+                </div>
+                <div class="search_seggest">
+                    <p>Cụm từ tìm kiếm phổ biến</p>
+                </div>
+                
+                <div id="search_ajax"></div>
+            </form>
+        </div>
+    </div>
+    <!-- Search End -->
+
+    <!-- scrollUp -->
+    <a id="button"></a>
+    <!-- scrollUp End -->
+
+   
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+
+</body>
+
+</html>
